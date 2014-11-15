@@ -4,7 +4,7 @@ var gulp = require('gulp'),
 gulp.task('js', function() {
 	gulp.src('lib/Vec2.js')
 		.pipe(uglify())
-		.pipe(gulp.dest('lib/Vec2.min.js'));
+		.pipe(gulp.dest('lib/uglify'));
 });
 
 gulp.task('default', ['js']);
