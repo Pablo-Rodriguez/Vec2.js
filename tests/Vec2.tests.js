@@ -97,4 +97,12 @@ test('Set tests', function() {
 	assert(w.set(1, 1).equals({x: 1, y: 1}), 'seting to (1, 0)');
 }, true);
 
+test('Symmetric tests', function() {
+	assert(aprox(u.set(1, 0).symmetric(w).x, 0, 0.01) && aprox(u.set(1, 0).symmetric(w).y, -1, 0.01), '(1, 0) symmetric with (1, 1) = (0, -1)');
+}, true);
+
+test('Simplyfy tests', function() {
+	assert(u.set(1, 0).simplify().equals === undefined && u.simplify().x === 1 && u.simplify().y === 0, 'A simplified vector has no methods but the same value');
+}, true);
+
 // test(' tests', function() {}, true);
