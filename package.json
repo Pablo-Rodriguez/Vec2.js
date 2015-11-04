@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Pablo-Rodriguez/Vec2.js",
   "devDependencies": {
     "gulp": "^3.8.10",
+    "gulp-rename": "^1.2.2",
     "gulp-uglify": "^1.0.1"
   }
 }
